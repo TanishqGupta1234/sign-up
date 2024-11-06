@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    color: white; /* Set default text color to white */
+}
+
+.container {
+    max-width: 700px;
+    width: 100%;
+    background-color:rgba(56,56,56,255);
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+
+.container .title {
+    font-size: 25px;
+    font-weight: 500;
+    color: white; /* Ensure title text is white */
+}
+
+.container .title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 30px;
+    height: 3px;
+    background-color: #9b599b;
+}
+
+.container form .userdetalis {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0px;
+}
+
+form .userdetalis .input-box {
+    margin-bottom: 1;
+    width: calc(100% / 2 - 50px );
+}
+
+.userdetalis .input-box .details {
+    display: block;
+    font-weight: 200;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    color: white; /* Ensure details text is white */
+}
+
+.userdetalis .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid white;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    color: white; /* Set input text color to white */
+    background-color: transparent; /* Make input background transparent */
+}
+
+.userdetalis .input-box input:focus,
+.userdetalis .input-box input:valid {
+    border-color:gold;
+}
+
+.sign-up {
+    width: 100%;
+    height: 100%;
+    color: goldenrod; /* Keep the button text color as goldenrod */
+}
+.login a{
+    color: bisque;
+
+}
+
+.profile-image {
+    width: 200px; /* Set the width of the image */
+    height: 200px; /* Set the height of the image */
+    object-fit: cover; /* Ensure the image covers the area */
+    margin: 20px auto; /* Center the image */
+    display: block; /* Center the image */
+}
+
+.videoss{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+}
+
+@media (min-aspect-ratio:16/9)
+{
+    .videoss{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio:16/9)
+{
+    .videoss{
+        width: auto;
+        height: 100%;
+    }
+}
+
+
+

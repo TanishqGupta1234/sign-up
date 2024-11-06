@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Page</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .sign-up {
+      display: flex; /* Use flexbox */
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically if needed */
+      width: 100%; /* Ensure it takes full width */
+      margin-top: 20px; /* Optional: add some space above the button */
+    }
+    .sign-up button {
+      width: 50%; /* Set button width */
+      height: 50px; /* Set a reasonable height */
+      color: black; 
+      outline: none; 
+      font-size: 25px; 
+      font-weight: 100; 
+      letter-spacing: 1px; 
+      text-align: center; 
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <video autoplay loop muted plays-inline class="videoss">
+      <source src="video.mp4" type="video/mp4">
+    </video>
+    <img src="imagesss.png" alt="Profile Image" class="profile-image"> 
+    <div style="text-align: center;" class="title">SIGN UP</div>
+    <form action="#">
+      <div class="userdetalis">
+        <div class="input-box">
+          <span class="details">Full Name</span>
+          <input type="text" placeholder="Enter Your First Name" required>
+        </div>
+        <div class="input-box">
+          <span class="details">Last Name</span>
+          <input type="text" placeholder="Enter Your Last Name" required>
+        </div>
+        <div class="input-box">
+          <span class="details">Email or Phone Number</span>
+          <input type="text" placeholder="Enter Your Phone Number" required>
+        </div>
+        <div class="input-box">
+          <span class="details">SAP ID</span>
+          <input type="text" placeholder="Enter Your SAP ID" required>
+        </div>
+        <div class="input-box">
+          <span class="details">Password</span>
+          <input type="text" placeholder="Enter Your Password" required>
+        </div>
+        <div class="input-box">
+          <span class="details">Confirm Password</span>
+          <input type="text" placeholder="Confirm Your Password" required>
+        </div>
+      </div>
+      <div class="sign-up">
+       <button>Create Account</button>
+      </div>
+      <div style="margin-bottom: 20px;"></div>
+      <div class="login">
+        <p style="text-align: center;">Don't have an account? <a href="index2.html">Log In</a></p>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
